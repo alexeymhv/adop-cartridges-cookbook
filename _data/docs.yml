@@ -1,9 +1,8 @@
 - title: Recipes
   docs:
-  - How do I clone from Git?
-  - How do I run Maven?
-  - How do I run tests against Selenium
-
+  - recipes/git-clone
+  - recipes/run-maven
+  - recipes/selenium-tests
   # - prerequisites
   # - quickstart
   # - recommended-reading
