@@ -1,5 +1,6 @@
 - title: Recipes
   docs:
+  - recipes
   - recipes/git-clone
   - recipes/run-maven
   - recipes/selenium-tests
