@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: How do I clone from Gerrit?
+title: Cloning from Gerrit?
 permalink: /docs/recipes/git-clone/
 ---
 
