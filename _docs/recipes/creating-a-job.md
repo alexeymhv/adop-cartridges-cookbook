@@ -29,7 +29,7 @@ buildAppJob.with {
       preBuildCleanup()
     }
     
-  <JOB_CONFIGURATIONS_GO_HERE>
+    <JOB_CONFIGURATION_GOES_HERE>
 }
 ```
 
