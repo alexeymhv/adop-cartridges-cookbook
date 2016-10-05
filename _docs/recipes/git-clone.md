@@ -16,7 +16,7 @@ def projectFolderName = "${PROJECT_NAME}"
 
 * The freestyle job.
 
-Put your job name in place of the placeholder(<JOB_NAME>).
+    Put your job name in place of the placeholder(<JOB_NAME>).
 
 ```
 def buildAppJob = freeStyleJob(projectFolderName + "/<JOB_NAME>")
