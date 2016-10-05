@@ -1,5 +1,5 @@
 ---
 layout: docs
-title: How do I run maven?
+title: Running maven
 permalink: /docs/recipes/run-maven/
 ---
