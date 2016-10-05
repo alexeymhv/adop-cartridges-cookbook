@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: How do I clone from git?
+title: How do I clone from Gerrit?
 permalink: /docs/recipes/git-clone/
 ---
 
@@ -26,8 +26,11 @@ def referenceAppGitUrl = "ssh://jenkins@gerrit:29418/${PROJECT_NAME}/" + referen
 ```
 
 Once you've defined the necessary variable start setting your job.
+
 An _scm_ provider allows the job to check out SCM sources.
+
 _Don't forget to use the necessary **build wrappers** in order to clean the Jenkins workspace and to provide the required credentials._
+
 ```
 buildAppJob.with {
     description("This job builds Java Spring reference application")
