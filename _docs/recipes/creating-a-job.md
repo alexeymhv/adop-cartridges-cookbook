@@ -23,7 +23,7 @@ At first you'll need to define several variables:
     def buildAppJob = freeStyleJob(projectFolderName + "/<JOB_NAME>")
     ```
 
-Once you've defined the variable you can start setting up your job.
+Once you've defined the necessary variable you can start setting up your job.
 
 The job skeleton should be as follows:
 
