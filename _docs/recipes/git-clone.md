@@ -60,6 +60,8 @@ buildAppJob.with {
             branch("*/master")
         }
     }
+    ...
+}
 ```
 
 
