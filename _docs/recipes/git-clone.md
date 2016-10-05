@@ -31,6 +31,12 @@ The _scm_ section should be placed inside a job definition (refer to [Creating a
 _Don't forget to use the necessary **build wrappers** in order to clean the Jenkins workspace and to provide the required credentials that will be used when cloning the repository._
 
 ```
+def projectFolderName = "${PROJECT_NAME}"
+def buildAppJob = freeStyleJob(projectFolderName + "/<JOB_NAME>")
+
+def referenceAppgitRepo = "spring-petclinic"
+def referenceAppGitUrl = "ssh://jenkins@gerrit:29418/${PROJECT_NAME}/" + referenceAppgitRepo
+
 buildAppJob.with {
     description("This job builds Java Spring reference application")
     wrappers {
