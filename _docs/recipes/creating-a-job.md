@@ -8,13 +8,21 @@ Let's say you want to create a _freestyle_ Jenkins job.
 
 # Method
 
-At first you'll need to define a _job_ variable.  The job will be created in your project.
+At first you'll need to define several variables:
 
-Put your job name in place of the placeholder \<JOB_NAME\>.
+* Project folder name where you want the job to be created.
 
-```
-def buildAppJob = freeStyleJob(projectFolderName + "/<JOB_NAME>")
-```
+    ```
+    def projectFolderName = "${PROJECT_NAME}"
+    
+    ```
+* The freestyle job.
+
+    Put your job name in place of the placeholder \<JOB_NAME\>.
+
+    ```
+    def buildAppJob = freeStyleJob(projectFolderName + "/<JOB_NAME>")
+    ```
 
 Once you've defined the variable you can start setting up your job.
 
