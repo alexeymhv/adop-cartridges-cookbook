@@ -20,7 +20,7 @@ Once you've defined the variable you can start setting up your job.
 
 The job skeleton should be as follows:
 
-_Don't forget to use the necessary **build wrappers** like preBuildCleanup() which will clean the Jenkins workspace._
+_Don't forget to use the preBuildCleanup() **build wrapper** which will clean the Jenkins workspace._
 
 ```
 buildAppJob.with {
