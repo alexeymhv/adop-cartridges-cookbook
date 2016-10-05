@@ -40,7 +40,7 @@ An _scm_ provider allows the job to check out SCM sources.
 
 In our case we will clone the master branch of the _spring-petclinic_ repository stored in Gerrit.
 
-_Don't forget to use the necessary **build wrappers** in order to clean the Jenkins workspace and to provide the required credentials._
+_Don't forget to use the necessary **build wrappers** in order to clean the Jenkins workspace and to provide the required credentials that will be used when cloning the repository._
 
 ```
 buildAppJob.with {
