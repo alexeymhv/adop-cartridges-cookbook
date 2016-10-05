@@ -34,9 +34,11 @@ At first you'll need to define several variables:
     def referenceAppGitUrl = "ssh://jenkins@gerrit:29418/${PROJECT_NAME}/" + referenceAppgitRepo
     ```
 
-Once you've defined the necessary variable start setting your job.
+Once you've defined the necessary variable you can start setting up your job.
 
 An _scm_ provider allows the job to check out SCM sources.
+
+In our case we will clone the master branch of the _spring-petclinic_ repository stored in Gerrit.
 
 _Don't forget to use the necessary **build wrappers** in order to clean the Jenkins workspace and to provide the required credentials._
 
