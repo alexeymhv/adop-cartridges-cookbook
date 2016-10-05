@@ -7,7 +7,7 @@ services:
 # branch whitelist, only for GitHub Pages
 branches:
   only:
-  - gh-pages 
+  - gh-pages
 
 env:
   global:
@@ -21,7 +21,7 @@ before_install:
 script:
  - docker-compose build
  - docker-compose up -d
- - count=0; until docker logs adopdockercompose_site_1 | grep "Server running..." &> /dev/null || (( count++ > 12 )); do echo "Waiting $count"; sleep 5; done
- - docker logs adopdockercompose_site_1
- - docker logs adopdockercompose_site_1 | grep "Server running..." &> /dev/null
- - curl -sL -w "%{http_code}\\n" "http://localhost/adop-docker-compose/" -o /dev/null | grep "200" &> /dev/null
+ - count=0; until docker logs adopcartridgescookbook_site_1 | grep "Server running..." &> /dev/null || (( count++ > 12 )); do echo "Waiting $count"; sleep 5; done
+ - docker logs adopcartridgescookbook_site_1
+ - docker logs adopcartridgescookbook_site_1 | grep "Server running..." &> /dev/null
+ - curl -sL -w "%{http_code}\\n" "http://localhost/adop-cartridge-cookbook/" -o /dev/null | grep "200" &> /dev/null
