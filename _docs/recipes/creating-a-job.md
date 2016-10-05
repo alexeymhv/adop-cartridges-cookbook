@@ -8,7 +8,7 @@ Let's say you want to create a _freestyle_ Jenkins job.
 
 #Method
 
-At first you'll need to define a _job_ variable.
+At first you'll need to define a _job_ variable.  The job will be created in your project.
 
 Put your job name in place of the placeholder \<JOB_NAME\>.
 
