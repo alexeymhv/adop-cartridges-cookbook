@@ -43,6 +43,7 @@ buildAppJob.with {
 # Example
 
 ```
+def projectFolderName = "${PROJECT_NAME}"
 def buildAppJob = freeStyleJob(projectFolderName + "/<JOB_NAME>")
 buildAppJob.with {
     description("This job builds Java Spring reference application")
