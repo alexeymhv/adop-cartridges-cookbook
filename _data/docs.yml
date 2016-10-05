@@ -4,6 +4,7 @@
 - title: Recipes
   docs:
   - recipes
+  - recipes/creating-a-job
   - recipes/git-clone
   - recipes/run-maven
   - recipes/selenium-tests
