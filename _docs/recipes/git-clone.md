@@ -5,7 +5,7 @@ permalink: /docs/recipes/git-clone/
 ---
 
 Let's say you want your pipeline to clone a repository from Gerrit.
-At first you need to define several variables:
+At first you'll need to define several variables:
 * Project folder name
 ```groovy
 def projectFolderName = "${PROJECT_NAME}"
