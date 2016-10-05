@@ -37,7 +37,7 @@ You will need to set several wrappers in order to provide the required credentia
 
 An _scm_ provider allows the job to check out SCM sources.
 
-In our case we will clone the master branch of the _spring-petclinic_ repository stored in Gerrit.
+In our case we will clone the master branch of the _[spring-petclinic](https://github.com/Accenture/spring-petclinic)_ repository stored in Gerrit.
 
 The _scm_ section should be placed inside a job definition (refer to [Creating a Jenkins job](https://mibzzz.github.io/adop-cartridges-cookbook/docs/recipes/creating-a-job/)).
 ```
