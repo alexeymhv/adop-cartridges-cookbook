@@ -1,7 +1,6 @@
--title: Getting Started
-  docs:
-  - welcome
-
+# -title: Getting Started
+#   docs:
+#   - welcome
 - title: Recipes
   docs:
   - recipes
