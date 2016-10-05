@@ -14,7 +14,6 @@ At first you'll need to define several variables:
 
     ```
     def projectFolderName = "${PROJECT_NAME}"
-    
     ```
 * The freestyle job.
 
