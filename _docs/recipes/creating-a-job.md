@@ -6,7 +6,7 @@ permalink: /docs/recipes/creating-a-job/
 
 Let's say you want to create a _freestyle_ Jenkins job.
 
-#Method
+# Method
 
 At first you'll need to define a _job_ variable.  The job will be created in your project.
 
@@ -33,7 +33,7 @@ buildAppJob.with {
 }
 ```
 
-#Example
+# Example
 
 ```
 def buildAppJob = freeStyleJob(projectFolderName + "/<JOB_NAME>")
