@@ -33,5 +33,19 @@ buildAppJob.with {
 }
 ```
 
+#Example
+
+```
+def buildAppJob = freeStyleJob(projectFolderName + "/<JOB_NAME>")
+buildAppJob.with {
+    description("This job builds Java Spring reference application")
+    wrappers {
+      preBuildCleanup()
+    }
+    
+  <JOB_CONFIGURATIONS_GO_HERE>
+}
+```
+
 
 
