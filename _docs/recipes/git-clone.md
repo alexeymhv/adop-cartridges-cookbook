@@ -15,10 +15,18 @@ Put your job name in place of the placeholder(<JOB_NAME>).
 ```groovy
 def buildAppJob = freeStyleJob(projectFolderName + "/<JOB_NAME>")
 ```
+3. The name of the repository you want to clone:
+```groovy
+def referenceAppgitRepo = "spring-petclinic"
+```
+4. The URL of your gerrit project:
+```groovy
+def referenceAppGitUrl = "ssh://jenkins@gerrit:29418/${PROJECT_NAME}/" + referenceAppgitRepo
+```
 
 Once you've defined the necessary variable start setting your job.
 An _scm_ provider allows the job to check out SCM sources.
-Don't forget to use the necessary _build wrappers_ in order to clean the Jenkins workspace and to provide the required credentials.
+_Don't forget to use the necessary _build wrappers_ in order to clean the Jenkins workspace and to provide the required credentials._
 ```groovy
 buildAppJob.with {
     description("This job builds Java Spring reference application")
