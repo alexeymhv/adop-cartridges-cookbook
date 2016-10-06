@@ -10,7 +10,7 @@ Let's say you want to archive an artefact on the job.
 
 The artifacts should be archived as a part of a post build action.
 
-The snippet bellow should be places inside the job definition.
+The snippet bellow should be placed inside the job definition.
 
 ```
   publishers {
