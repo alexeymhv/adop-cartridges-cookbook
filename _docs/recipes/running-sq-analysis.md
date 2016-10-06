@@ -41,7 +41,7 @@ steps {
 }
 ```
 
-Once you have all the necessary variables you can start adjusting the SonarQube analysis.
+Once you have all the necessary variables you can start adjusting the SonarQube analysis properties.
 
 ```
 configure { myProject ->
