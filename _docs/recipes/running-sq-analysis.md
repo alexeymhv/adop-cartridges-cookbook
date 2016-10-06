@@ -58,7 +58,7 @@ configure { myProject ->
             jdk('(Inherit From Job)')
             task()
         }
-    }
+}
 ```
 
 
