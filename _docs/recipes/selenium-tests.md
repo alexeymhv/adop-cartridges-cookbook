@@ -1,5 +1,5 @@
 ---
 layout: docs
-title: How do I run tests against Selenium?
+title: Running tests against Selenium
 permalink: /docs/recipes/selenium-tests/
 ---
