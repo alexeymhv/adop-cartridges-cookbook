@@ -16,7 +16,7 @@ def pipelineView = buildPipelineView(projectFolderName + "/Java_Reference_Applic
 
 Once you've defined a pipeline you can start setting properties for it.
 
-``
+```
 pipelineView.with {
    title('Reference Application Pipeline')
    displayedBuilds(5)
@@ -25,7 +25,7 @@ pipelineView.with {
    showPipelineDefinitionHeader()
    refreshFrequency(5)
 }
-``
+```
 
 Used properties:
 
