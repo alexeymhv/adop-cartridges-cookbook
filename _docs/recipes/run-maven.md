@@ -4,9 +4,9 @@ title: Running Maven
 permalink: /docs/recipes/run-maven/
 ---
 
-# Method
-
 Let’s say you want your pipeline to invoke a Maven build.
+
+# Method
 
 The Maven definition should be set up as a part of a build step
 
