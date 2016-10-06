@@ -18,12 +18,12 @@ Once you've defined a pipeline you can start setting properties for it.
 
 ``
 pipelineView.with {
-    title('Reference Application Pipeline')
-    displayedBuilds(5)
-    selectedJob(projectFolderName + "/Reference_Application_Build")
-    showPipelineParameters()
-    showPipelineDefinitionHeader()
-    refreshFrequency(5)
+   title('Reference Application Pipeline')
+   displayedBuilds(5)
+   selectedJob(projectFolderName + "/Reference_Application_Build")
+   showPipelineParameters()
+   showPipelineDefinitionHeader()
+   refreshFrequency(5)
 }
 ``
 
