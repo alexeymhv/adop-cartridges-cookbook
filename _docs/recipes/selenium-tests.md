@@ -13,6 +13,8 @@ The method described in this recipe runs Selenium tests as a part of the Maven b
 1. First of all you need a source repository where you have a Maven _pom_ file and all your Selenium tests stored. It should be a basic java project. As an example see the [adop-cartridge-java-regression-tests](https://github.com/Accenture/adop-cartridge-java-regression-tests) repository. 
   
   The link to the repository should be put in the _urls.txt_ file in the _/src/_ folder of your cartridge.
+  
+  We assume that the reader knows how to write Selenium tests. Thus, we won't cover this topic in this particular recipe.
 
 
 
