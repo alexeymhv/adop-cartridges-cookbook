@@ -11,7 +11,7 @@ Let's say you want to run a SonarQube analysis.
 At first you should define several environment variables, that will be used by SonarQube anlysis.
 
 ```
-/ Folders
+// Folders
 def workspaceFolderName = "${WORKSPACE_NAME}"
 def projectFolderName = "${PROJECT_NAME}"
 
