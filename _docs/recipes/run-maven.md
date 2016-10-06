@@ -25,6 +25,7 @@ The following parameters should be defined:
   _Specifies the goals to execute including other command line options_
   
 * mavenInstallation(String name)
+
   _Specifies the Maven installation for executing this step_
   
 For more details about Maven parameters please refer to the official _[Jenkins Job DSL Plugin Documentation](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.step.StepContext.maven)_
