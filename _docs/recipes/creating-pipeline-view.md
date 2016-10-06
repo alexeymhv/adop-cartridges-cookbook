@@ -27,7 +27,7 @@ pipelineView.with {
 }
 ```
 
-Used properties:
+# Properties
 
 * title(String title)
 
