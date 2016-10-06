@@ -6,5 +6,10 @@
   docs:
   - recipes/creating-a-job
   - recipes/git-clone
-  - recipes/run-maven
+  - recipes/running-maven
   - recipes/selenium-tests
+  - recipes/running-sq-analysis
+  - recipes/creating-pipeline-view
+  - recipes/calling-downstream-job
+  - recipes/archiving-artefact-to-nexus
+  - recipes/archiving-artifact-on-job
