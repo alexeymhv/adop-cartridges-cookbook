@@ -53,7 +53,7 @@ configure { myProject ->
                           sonar.sources=src/main/java
                           sonar.language=java
                           sonar.sourceEncoding=UTF-8
-                         sonar.scm.enabled=false''')
+                          sonar.scm.enabled=false''')
             javaOpts()
             jdk('(Inherit From Job)')
             task()
@@ -61,6 +61,59 @@ configure { myProject ->
 }
 ```
 
+# Example
+
+```
+// Folders
+def workspaceFolderName = "${WORKSPACE_NAME}"
+def projectFolderName = "${PROJECT_NAME}"
+
+// Variables
+def projectNameKey = projectFolderName.toLowerCase().replace("/", "-")
+
+def codeAnalysisJob = freeStyleJob(projectFolderName + "/Reference_Application_Code_Analysis")
+
+codeAnalysisJob.with {
+    description("This job runs code quality analysis for Java reference application using SonarQube.")
+    
+    ...
+    
+    environmentVariables {
+        env('WORKSPACE_NAME', workspaceFolderName)
+        env('PROJECT_NAME', projectFolderName)
+        env('PROJECT_NAME_KEY', projectNameKey)
+    }
+    
+    ...
+    
+    steps {
+        copyArtifacts('Reference_Application_Unit_Tests') {
+            buildSelector {
+                buildNumber('${B}')
+            }
+        }
+    }
+    
+    configure { myProject ->
+    myProject / builders << 'hudson.plugins.sonar.SonarRunnerBuilder'(plugin: "sonar@2.2.1") {
+        project('sonar-project.properties')
+        properties('''sonar.projectKey=${PROJECT_NAME_KEY}
+                      sonar.projectName=${PROJECT_NAME}
+                      sonar.projectVersion=1.0.${B}
+                      sonar.sources=src/main/java
+                      sonar.language=java
+                      sonar.sourceEncoding=UTF-8
+                      sonar.scm.enabled=false''')
+        javaOpts()
+        jdk('(Inherit From Job)')
+        task()
+    }
+    
+    ...
+}
+```
+
+See the source code in our _[adop-cardridge-java](https://github.com/Accenture/adop-cartridge-java/blob/master/jenkins/jobs/dsl/java_reference_application_jobs.groovy)_ cartridge repository.
 
 
 
