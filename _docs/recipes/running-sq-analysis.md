@@ -113,7 +113,7 @@ codeAnalysisJob.with {
 }
 ```
 
-See the source code in our _[adop-cardridge-java](https://github.com/Accenture/adop-cartridge-java/blob/master/jenkins/jobs/dsl/java_reference_application_jobs.groovy)_ cartridge repository.
+See the complete source code in our _[adop-cardridge-java](https://github.com/Accenture/adop-cartridge-java/blob/master/jenkins/jobs/dsl/java_reference_application_jobs.groovy)_ cartridge repository.
 
 
 
