@@ -55,6 +55,11 @@ Used properties:
   
 _More details on pipeline parameters you can find in [Jenkins Job DSL Plugin Documentation / buildPipeline](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.views.NestedViewsContext.buildPipelineView)_
 
+Please notice that each job in pipeline, except the last one, requires a post-build action, which triggers the next job in the line. 
+
+
+
+
 
 
 
