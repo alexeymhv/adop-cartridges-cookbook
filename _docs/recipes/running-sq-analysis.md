@@ -19,7 +19,7 @@ def projectFolderName = "${PROJECT_NAME}"
 def projectNameKey = projectFolderName.toLowerCase().replace("/", "-")
 ```
 
-The following part should go inside the job definition:
+The following snippets should go inside the job definition.
 
 ```
     environmentVariables {
@@ -28,6 +28,39 @@ The following part should go inside the job definition:
         env('PROJECT_NAME_KEY', projectNameKey)
     }
 ```
+
+Don't forget to get the build number from the artifacts of the previous job.
+
+```
+steps {
+        copyArtifacts('Reference_Application_Unit_Tests') {
+            buildSelector {
+                buildNumber('${B}')
+            }
+        }
+}
+```
+
+Once you have all the necessary variables you can start adjusting the SonarQube analysis.
+
+```
+configure { myProject ->
+        myProject / builders << 'hudson.plugins.sonar.SonarRunnerBuilder'(plugin: "sonar@2.2.1") {
+            project('sonar-project.properties')
+            properties('''sonar.projectKey=${PROJECT_NAME_KEY}
+                          sonar.projectName=${PROJECT_NAME}
+                          sonar.projectVersion=1.0.${B}
+                          sonar.sources=src/main/java
+                          sonar.language=java
+                          sonar.sourceEncoding=UTF-8
+                         sonar.scm.enabled=false''')
+            javaOpts()
+            jdk('(Inherit From Job)')
+            task()
+        }
+    }
+```
+
 
 
 
