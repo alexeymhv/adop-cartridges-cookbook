@@ -55,46 +55,6 @@ Used properties:
   
 _More details on pipeline parameters you can find in [Jenkins Job DSL Plugin Documentation / buildPipeline](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.views.NestedViewsContext.buildPipelineView)_
 
-Please notice that each job in pipeline, except the last one, requires a post-build action, which triggers the next job in the line. 
+Please notice that each job in pipeline, except the last one, requires a post-build action, which triggers the next job in the line.
 
-Use a publishers{} method to define a post-build action. 
-
-You can triiger the next job as a post-build action using a downstreamParameterized{} method.
-
-The following snippet should be placed inside the job definition.
-
-```
-    publishers {
-        archiveArtifacts("**/*")
-        downstreamParameterized {
-            trigger(projectFolderName + "/Reference_Application_Unit_Tests") {
-                condition("UNSTABLE_OR_BETTER")
-                parameters {
-                    predefinedProp("B", '${BUILD_NUMBER}')
-                    predefinedProp("PARENT_BUILD", '${JOB_NAME}')
-                }
-            }
-        }
-    }
-```
-
-* trigger(String project)
-  
-  Triggers the job specified inside the parentheses.
-  
-* parameters{}
-  
-  Encloses the parameter definitions for the job to trigger.
-  
-* predefinedProp(String key, String value)
-  
-  Adds a parameter.
-  
-
-
-
-
-
-
-
-
+For further information please refer to our [Calling a donwstream job with parameters](https://mibzzz.github.io/adop-cartridges-cookbook/docs/recipes/calling-downstream-job/) recipe.
