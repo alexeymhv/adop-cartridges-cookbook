@@ -24,6 +24,7 @@ In the archiveArtifacts() method you should specify the pattern of file to archi
 # Properties
 
 - archiveArtifacts(String glob, String excludeGlob = null)
+
   Archives artifacts with each build.
 
 ---
