@@ -18,6 +18,8 @@ The link to the repository should be put in the _[urls.txt](https://github.com/A
   
 We assume that the reader knows how to write Selenium tests and pom files. Thus, we won't cover this topic in this particular recipe. You can take this [Selenium test](https://github.com/Accenture/adop-cartridge-java-regression-tests/blob/master/src/test/java/springpetclinic_selenium/selenium/OwnerTest.java) and a [pom.xml](https://github.com/Accenture/adop-cartridge-java-regression-tests/blob/master/pom.xml) file as an example.
 
+### To be updated...
+
 
 
 
