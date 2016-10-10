@@ -18,7 +18,7 @@ There are two methods how you can upload your artefacts from Jenkins to Nexus:
 Nexus API requires user credentials to be provided.
 We advice you to pass your nexus credentials to a jenkins job as environment variables.
 
-Let's assume your ENV variables have the following names USERNAME and PASSWORD.
+Let's assume your _ENV_ variables have the following names _USERNAME_ and _PASSWORD_.
 
 The following snippet should go inside Jenkins job definition:
 
@@ -48,3 +48,4 @@ The following snippet should go inside Jenkins job definition:
 
 - c - classifier (optional)
 
+### Maven
