@@ -8,6 +8,4 @@ Let's say you want to archive an artefact to Nexus.
 
 # Method
 
-_to be updated_
-
-Nexus Artifact Uploader plugin might be required.
+At first you need to install a _[Nexus Artifact Uploader](https://wiki.jenkins-ci.org/display/JENKINS/Nexus+Artifact+Uploader)_ plugin on Jenkins.
