@@ -8,4 +8,8 @@ Let's say you want to archive an artefact to Nexus.
 
 # Method
 
-At first you need to install a _[Nexus Artifact Uploader](https://wiki.jenkins-ci.org/display/JENKINS/Nexus+Artifact+Uploader)_ plugin on Jenkins.
+There are two methods how you can upload your artefacts from Jenkins to Nexus:
+
+1. Making a call to Nexus API using cURL (or _[Nexus Artifact Uploader](https://wiki.jenkins-ci.org/display/JENKINS/Nexus+Artifact+Uploader)_).
+
+2. Uploading artifact as a part of Maven build lifecycle.
