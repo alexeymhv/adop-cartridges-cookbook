@@ -15,5 +15,18 @@ There are two methods how you can upload your artefacts from Jenkins to Nexus:
 2. Uploading artifact as a part of Maven build lifecycle.
 
 ### cURL
+Nexus API requires user credentials to be provided.
+We advice you to pass your nexus credentials to a jenkins job as environment variables.
+Let's assume your ENV variables have the following names USERNAME and PASSWORD.
+The following snippet should go inside Jenkins job definition:
 
-At first you need to add the credentials from Nexus to Jenkins.
+```
+    steps {
+        shell('''
+            |cd target
+            |curl -v -F r=<REPOSITORY_NAME> -F hasPom=false -F e=war -F g=com.spring.test -F a=petclinic -F v=1.0 -F p=war -F file=@petclinic.war -u $USERNAME:$PASSWORD http://nexus:8081/nexus/service/local/artifact/maven/content
+              '''.stripMargin()
+        )
+    }
+```
+
