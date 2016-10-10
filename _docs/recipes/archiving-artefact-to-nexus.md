@@ -15,3 +15,5 @@ There are two methods how you can upload your artefacts from Jenkins to Nexus:
 2. Uploading artifact as a part of Maven build lifecycle.
 
 ### cURL
+
+At first you need to add the credentials from Nexus to Jenkins.
