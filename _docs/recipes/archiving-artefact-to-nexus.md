@@ -34,3 +34,17 @@ The following snippet should go inside Jenkins job definition:
 
 #### Parameters
 
+- r - repository
+
+- e - extension
+
+- g - group id
+
+- a - artifact id
+
+- v - version
+
+- p - packaging
+
+- c - classifier (optional)
+
