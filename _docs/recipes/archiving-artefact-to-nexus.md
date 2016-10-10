@@ -49,3 +49,4 @@ The following snippet should go inside Jenkins job definition:
 - c - classifier (optional)
 
 ### Maven
+
