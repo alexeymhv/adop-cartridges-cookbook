@@ -96,14 +96,22 @@ steps {
 }
 ```
 
+**Note:** The "repositoryId" parameter is not a Nexus repository ID, it is the ID of a server section in your settings.xml file which has then credentials needed for deployment.
+
 ### Parameters
 
 - goals() - Maven goals to execute
 
 - property() - Adds a property for the Maven build
 
-    #### Nexus parameters
-    
-    - groupId - group id
-    
-    - artifactId - artifact id
+- mavenInstallation() - Specifies the Maven installation for executing this step
+
+- providedSettings() - Speficies the _settings.xml_ file to use. 
+
+===
+
+More details here:
+
+- [Jenkins Job DSL API / maven](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.step.StepContext.maven)
+
+- [How can I programmatically upload an artifact into Nexus?](https://support.sonatype.com/hc/en-us/articles/213465818-How-can-I-programmatically-upload-an-artifact-into-Nexus-)
