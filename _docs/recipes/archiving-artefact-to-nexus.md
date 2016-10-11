@@ -50,3 +50,6 @@ The following snippet should go inside Jenkins job definition:
 
 ### Maven
 
+First you need to add Nexus credentials to Maven _settings.xml_ file.
+
+
