@@ -98,7 +98,7 @@ steps {
 
 **Note:** The "repositoryId" parameter is not a Nexus repository ID, it is the ID of a server section in your settings.xml file which has then credentials needed for deployment.
 
-### Parameters
+### Properties
 
 - goals() - Maven goals to execute
 
