@@ -37,4 +37,15 @@ steps {
 
 The idea is to get the necessary environment variables and pass them as the properties of the Maven goal. 
 
+All Selenium webdriver actions are being bypassed through a [ZAP interception proxy](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project).
+
+ZAP proxy is being launched as a separate docker container.
+
+Thus, we need to specify several parameters:
+
+* DPETCLINIC_URL - The app url we are intending to test
+* DZAP_IP - IP address of ZAP container
+* DZAP_PORT - The port ZAP is listening for
+* DZAP_ENABLED - Defines whether ZAP should be enabled or not
+
 Maven will trigger the Selenium tests.
