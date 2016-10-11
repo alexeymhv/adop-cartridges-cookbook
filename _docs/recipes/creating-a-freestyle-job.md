@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Creating a freestyle Jenkins job
-permalink: /docs/recipes/creating-a-job/
+permalink: /docs/recipes/creating-a-freestyle-job/
 ---
 
 This section describes how to create a _freestyle_ Jenkins job.
