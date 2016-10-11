@@ -48,4 +48,10 @@ Thus, we need to specify several parameters:
 * DZAP_PORT - The port ZAP is listening for
 * DZAP_ENABLED - Defines whether ZAP should be enabled or not
 
-Maven will trigger the Selenium tests.
+The parameters are being used by the selenium test. 
+
+For more understanding see the source code: 
+
+- [OwnerTest.java](https://github.com/Accenture/adop-cartridge-java-regression-tests/blob/master/src/test/java/springpetclinic_selenium/selenium/OwnerTest.java) - the selenium test.
+- [Configure.java](https://github.com/Accenture/adop-cartridge-java-regression-tests/blob/master/src/main/java/springpetclinic_selenium/utils/Configure.java) - the class which processes the data set in config.properties file
+- [config.properties](https://github.com/Accenture/adop-cartridge-java-regression-tests/tree/master/src/main/resources) - a configuration file which describes the properties of ZAP and Selenium Grid
