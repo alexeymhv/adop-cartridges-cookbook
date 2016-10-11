@@ -4,7 +4,7 @@ title: Calling a downstream job with parameters
 permalink: /docs/recipes/calling-downstream-job/
 ---
 
-Let's say you want to call a downstream job with parameters.
+This section describes how to call a downstream job with parameters.
 
 # Method
 
