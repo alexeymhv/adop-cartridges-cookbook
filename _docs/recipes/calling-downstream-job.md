@@ -42,3 +42,9 @@ The following snippet should be placed inside the job definition.
 * predefinedProp(String key, String value)
   
   Adds a parameter.
+
+---
+
+More details here:
+
+- [Jenkins Job DSL API / downstreamParameterized](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.publisher.PublisherContext.downstreamParameterized)
