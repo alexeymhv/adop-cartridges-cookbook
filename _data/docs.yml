@@ -4,7 +4,7 @@
   
 - title: Creating jobs
   docs:
-  - recipes/creating-a-job
+  - recipes/creating-a-freestyle-job
   
 - title: Source code management
   docs:
