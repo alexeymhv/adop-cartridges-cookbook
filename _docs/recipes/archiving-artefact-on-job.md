@@ -28,7 +28,11 @@ In the archiveArtifacts() method you should specify the pattern of file to archi
   Archives artifacts with each build.
 
 ---
-_More details on archiveArtifacts() parameters you can find in [Jenkins Job DSL Plugin Documentation / archiveArtifacts](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.publisher.PublisherContext.archiveArtifacts)_
+
+More details here:
+
+- [Jenkins Job DSL Plugin Documentation / archiveArtifacts](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.publisher.PublisherContext.archiveArtifacts)
+
 
 
 
