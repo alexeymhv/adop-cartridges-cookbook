@@ -4,7 +4,7 @@ title: Archiving an artefact on the job
 permalink: /docs/recipes/archiving-artefact-on-job/
 ---
 
-Let's say you want to archive an artefact on the job.
+This section describes how to archive an artefact on the job.
 
 # Method
 
