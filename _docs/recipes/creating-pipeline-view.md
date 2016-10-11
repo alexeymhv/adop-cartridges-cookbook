@@ -61,4 +61,5 @@ Please notice that each job in pipeline, except the last one, requires a post-bu
 
 More details here:
 
+- [Jenkins Job DSL API / buildPipelineView](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.DslFactory.buildPipelineView)
 - [Calling a donwstream job with parameters](https://mibzzz.github.io/adop-cartridges-cookbook/docs/recipes/calling-downstream-job/)
