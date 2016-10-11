@@ -19,7 +19,7 @@ The snippet bellow should be placed inside the job definition.
   }
 ```
 
-In the archiveArtifacts() method you should specify the pattern of file to archive.
+In the archiveArtifacts() method, you should specify the pattern of file to archive.
 
 # Properties
 
@@ -31,7 +31,7 @@ In the archiveArtifacts() method you should specify the pattern of file to archi
 
 More details here:
 
-- [Jenkins Job DSL Plugin Documentation / archiveArtifacts](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.publisher.PublisherContext.archiveArtifacts)
+- [Jenkins Job DSL Plugin Documentation - archiveArtifacts](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.publisher.PublisherContext.archiveArtifacts)
 
 
 

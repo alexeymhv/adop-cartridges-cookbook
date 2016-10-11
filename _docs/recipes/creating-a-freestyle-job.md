@@ -8,17 +8,17 @@ This section describes how to create a _freestyle_ Jenkins job.
 
 # Method
 
-At first you'll need to define several variables:
+At first, you'll need to define several variables:
 
-* Project folder name where you want the job to be created.
+* Project folder name should be set to the folder where you want the job to be created.
 
     ```
     def projectFolderName = "${PROJECT_NAME}"
     ```
     
-    **Note:** The _projectFolderName_ variable should be always set to _${PROJECT_NAME}_ and nothing else.
+    **Note:** The _projectFolderName_ variable should be always set to _${PROJECT_NAME}_ and nothing else, since this is parameterised by the Cartridge Loader job.
     
-* The freestyle job.
+* The freestyle job:
 
     Put your job name in place of the placeholder \<JOB_NAME\>.
 
@@ -26,7 +26,7 @@ At first you'll need to define several variables:
     def buildAppJob = freeStyleJob(projectFolderName + "/<JOB_NAME>")
     ```
 
-Once you've defined the necessary variable you can start setting up your job.
+Once you've defined the necessary variables, you can start setting up your job.
 
 The job skeleton should be as follows:
 
@@ -62,7 +62,7 @@ buildAppJob.with {
 
 More details here:
 
-- [Jenkins Job DSL API / freeStyleJob](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.DslFactory.freeStyleJob)
+- [Jenkins Job DSL API - freeStyleJob](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.DslFactory.freeStyleJob)
 
 
 

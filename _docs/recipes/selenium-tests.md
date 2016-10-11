@@ -6,12 +6,12 @@ permalink: /docs/recipes/selenium-tests/
 
 This section describes how to run tests against Selenium.
 
-The method described in this recipe runs Selenium tests as a part of the Maven build lifecycle.
+The method described in this recipe runs Selenium tests as part of the Maven build lifecycle.
 
 # Method
 
 
-First of all you need a source repository where you have a Maven _pom_ file and all your Selenium tests stored. It should be a basic java project. As an example see the [adop-cartridge-java-regression-tests](https://github.com/Accenture/adop-cartridge-java-regression-tests) repository. 
+First of all you need a source repository where you have a Maven _pom file_ and all your Selenium tests stored. It should be a basic java project. As an example see the [adop-cartridge-java-regression-tests](https://github.com/Accenture/adop-cartridge-java-regression-tests) repository. 
   
 The link to the repository should be put in the _[urls.txt](https://github.com/Accenture/adop-cartridge-java/blob/master/src/urls.txt)_ file in the _/src/_ folder of your cartridge.
   
@@ -60,5 +60,5 @@ For more understanding see the source code:
 
 More details here:
 
-- [Jenkins Job DSL API / maven](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.step.StepContext.maven)
-- [Jenkins Job DSL API / environmentVariables](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.jobs.FreeStyleJob.environmentVariables)
+- [Jenkins Job DSL API - maven](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.step.StepContext.maven)
+- [Jenkins Job DSL API - environmentVariables](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.jobs.FreeStyleJob.environmentVariables)

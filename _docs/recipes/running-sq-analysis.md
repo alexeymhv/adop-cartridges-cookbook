@@ -8,7 +8,7 @@ This section describes how to run a SonarQube analysis.
 
 # Method
 
-At first you should define several environment variables, that will be used by SonarQube anlysis.
+At first you should define certain environment variables which will be used by SonarQube anlysis.
 
 ```
 // Folders
@@ -41,7 +41,7 @@ steps {
 }
 ```
 
-Once you have all the necessary variables you can start adjusting the SonarQube analysis properties.
+Once you have all the necessary variables, you can start adjusting the SonarQube analysis properties.
 
 ```
 configure { myProject ->
@@ -127,8 +127,8 @@ codeAnalysisJob.with {
 
 More details here:
 
-- [Jenkins Job DSL API / configure](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.jobs.WorkflowJob.configure)
-- [adop-cardridge-java](https://github.com/Accenture/adop-cartridge-java/blob/master/jenkins/jobs/dsl/java_reference_application_jobs.groovy)
+- [Jenkins Job DSL API - configure](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.jobs.WorkflowJob.configure)
+- [adop-cartridge-java](https://github.com/Accenture/adop-cartridge-java/blob/master/jenkins/jobs/dsl/java_reference_application_jobs.groovy)
 - [Sonar parameters](http://docs.sonarqube.org/display/SONAR/Analysis+Parameters)
 
 

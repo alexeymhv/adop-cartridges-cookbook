@@ -14,9 +14,9 @@ There are two methods how you can upload your artefacts from Jenkins to Nexus:
 
 2. Uploading artifact as a part of Maven build lifecycle.
 
-### cURL
+### Curl
 Nexus API requires user credentials to be provided.
-We advice you to pass your nexus credentials to a jenkins job as environment variables.
+We advice you to pass your Nexus credentials to your Jenkins job as environment variables.
 
 Let's assume your _ENV_ variables have the following names _USERNAME_ and _PASSWORD_.
 
@@ -50,7 +50,7 @@ The following snippet should go inside Jenkins job definition:
 
 ### Maven
 
-Frst you need to have a [Config File Provider Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Config+File+Provider+Plugin) installed on Jenkins. 
+First you need to have the [Config File Provider Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Config+File+Provider+Plugin) installed on Jenkins. 
 
 Once you have it installed, add a new Maven _settings.xml_ configuration file.
 
@@ -70,7 +70,7 @@ Add the following snippet to the _settings.xml_ configuration file:
 </servers>
 ```
 
-In place of _USERNAME_ and _PASSWORD_ placeholders insert your real nexus credentials.
+In place of _USERNAME_ and _PASSWORD_ placeholders insert your real Nexus credentials.
 
 The artefact will be uploaded to Nexus as a part of Maven build lifecycle. Thus, the Nexus properties should be defined in Jenkins Job DSL _steps_ in _maven_ section.
 
@@ -96,7 +96,7 @@ steps {
 }
 ```
 
-**Note:** The "repositoryId" parameter is not a Nexus repository ID, it is the ID of a server section in your settings.xml file which has then credentials needed for deployment.
+**Note:** The "repositoryId" parameter is not a Nexus repository ID, it is the ID of the server section in your settings.xml file which has the credentials needed for deployment.
 
 ### Properties
 
@@ -113,6 +113,6 @@ steps {
 
 More details here:
 
-- [Jenkins Job DSL API / maven](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.step.StepContext.maven)
+- [Jenkins Job DSL API - maven](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.step.StepContext.maven)
 
 - [How can I programmatically upload an artifact into Nexus?](https://support.sonatype.com/hc/en-us/articles/213465818-How-can-I-programmatically-upload-an-artifact-into-Nexus-)

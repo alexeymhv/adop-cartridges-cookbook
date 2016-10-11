@@ -12,7 +12,7 @@ Use a publishers{} method to define a post-build action.
 
 You can trigger the next job as a post-build action using a downstreamParameterized{} method.
 
-The following snippet should be placed inside the job definition.
+The following snippet should be placed inside the job definition:
 
 ```
     publishers {
@@ -47,4 +47,4 @@ The following snippet should be placed inside the job definition.
 
 More details here:
 
-- [Jenkins Job DSL API / downstreamParameterized](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.publisher.PublisherContext.downstreamParameterized)
+- [Jenkins Job DSL API - downstreamParameterized](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.publisher.PublisherContext.downstreamParameterized)

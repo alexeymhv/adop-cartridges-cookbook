@@ -14,7 +14,7 @@ At first you need to define a variable, which will represent your pipeline.
 def pipelineView = buildPipelineView(projectFolderName + "/Java_Reference_Application")
 ```
 
-Once you've defined a pipeline you can start setting properties for it.
+Once you've defined a pipeline, you can start setting properties for it.
 
 ```
 pipelineView.with {
@@ -59,5 +59,5 @@ Please notice that each job in pipeline, except the last one, requires a post-bu
 
 More details here:
 
-- [Jenkins Job DSL API / buildPipelineView](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.DslFactory.buildPipelineView)
+- [Jenkins Job DSL API - buildPipelineView](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.DslFactory.buildPipelineView)
 - [Calling a donwstream job with parameters](https://mibzzz.github.io/adop-cartridges-cookbook/docs/recipes/calling-downstream-job/)

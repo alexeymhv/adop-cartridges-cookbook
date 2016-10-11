@@ -3,9 +3,9 @@ layout: docs
 title: Welcome
 permalink: /docs/welcome/
 ---
-This is the home of all ADOP Cartridges recipes.
+This is the home of all ADOP Cartridge recipes.
 
-All the recipes as an example take the _[adop-cartridge-java](https://github.com/Accenture/adop-cartridge-java)_ cartridge.
+All the recipes, as an example take the _[Java](https://github.com/Accenture/adop-cartridge-java)_ cartridge.
 
 When developing a cartridge, it is recommended that Job DSL be used in favor of XML to write your Jenkins jobs. If your cartridge only uses Job DSL a cartridge can be loaded multiple times without having to create a new project. However, if your cartridge loads XML then the jobs will need to be removed in order to reload the cartridge.
 
