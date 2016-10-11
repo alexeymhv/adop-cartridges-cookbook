@@ -106,7 +106,7 @@ steps {
 
 - mavenInstallation() - Specifies the Maven installation for executing this step
 
-- providedSettings() - Speficies the _settings.xml_ file to use. 
+- providedSettings() - Speficies the _settings.xml_ file to use
 
 ---
 
