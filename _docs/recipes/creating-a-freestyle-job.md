@@ -16,7 +16,7 @@ At first you'll need to define several variables:
     def projectFolderName = "${PROJECT_NAME}"
     ```
     
-    **Note:** The projectFolderName variable should be always set to ${PROJECT_NAME} and nothing else.
+    **Note:** The _projectFolderName_ variable should be always set to _${PROJECT_NAME}_ and nothing else.
     
 * The freestyle job.
 
