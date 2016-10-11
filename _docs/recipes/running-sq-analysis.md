@@ -61,6 +61,16 @@ configure { myProject ->
 }
 ```
 
+### Sonar parameters
+
+- sonar.projectKey - The project key that is unique for each project
+- sonar.projectName - Name of the project that will be displayed on the web interface
+- sonar.projectVersion - The project version
+- sonar.sources - Comma-separated paths to directories containing source files
+- sonar.language - Set the language of the source code to analyze
+- sonar.sourceEncoding - Set the source file encoding
+- sonar.scm.enabled - Enable or disable SCM activity plugin
+
 # Example
 
 ```
@@ -119,6 +129,7 @@ More details here:
 
 - [Jenkins Job DSL API / configure](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.jobs.WorkflowJob.configure)
 - [adop-cardridge-java](https://github.com/Accenture/adop-cartridge-java/blob/master/jenkins/jobs/dsl/java_reference_application_jobs.groovy)
+- [Sonar parameters](http://docs.sonarqube.org/display/SONAR/Analysis+Parameters)
 
 
 
