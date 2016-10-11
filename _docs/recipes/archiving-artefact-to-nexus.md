@@ -54,7 +54,7 @@ Frst you need to have a [Config File Provider Plugin](https://wiki.jenkins-ci.or
 
 Once you have it installed, add a new Maven _settings.xml_ configuration file.
 
-In the file you need to specify your Nexus credentials which will be used to upload artifacts.
+In the file you need to specify your Nexus credentials which will be used to upload artefacts.
 
 Add the followin snippet to the _settings.xml_ configuration file:
 
