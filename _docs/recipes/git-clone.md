@@ -37,6 +37,8 @@ You will need to set several wrappers in order to provide the required credentia
     }
 ```
 
+The _sshAgent()_ wrapper allows you to provide SSH credentials to a build. The _adop-jenkins-master_ is the id of the Jenkins credentials to be used in the job.
+
 An _scm_ provider allows the job to check out SCM sources.
 
 In our case we will clone the master branch of the _[spring-petclinic](https://github.com/Accenture/spring-petclinic)_ repository stored in Gerrit.
