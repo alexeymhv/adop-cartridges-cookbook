@@ -59,4 +59,6 @@ _More details on pipeline parameters you can find in [Jenkins Job DSL Plugin Doc
 
 Please notice that each job in pipeline, except the last one, requires a post-build action, which triggers the next job in the line.
 
-For further information please refer to our recipe - [Calling a donwstream job with parameters](https://mibzzz.github.io/adop-cartridges-cookbook/docs/recipes/calling-downstream-job/).
+More details here:
+
+- [Calling a donwstream job with parameters](https://mibzzz.github.io/adop-cartridges-cookbook/docs/recipes/calling-downstream-job/)
