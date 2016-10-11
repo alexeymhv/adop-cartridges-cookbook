@@ -4,7 +4,7 @@ title: Archiving an artefact to Nexus
 permalink: /docs/recipes/archiving-artefact-to-nexus/
 ---
 
-Let's say you want to archive an artefact to Nexus.
+This section describes how to archive an artefact to Nexus.
 
 # Method
 
