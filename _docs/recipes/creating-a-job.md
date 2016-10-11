@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Creating a Jenkins freestyle job
+title: Creating a freestyle Jenkins job
 permalink: /docs/recipes/creating-a-job/
 ---
 
