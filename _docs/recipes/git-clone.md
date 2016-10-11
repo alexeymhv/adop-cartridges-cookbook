@@ -15,6 +15,8 @@ At first you'll need to define several variables:
     ```
     def referenceAppgitRepo = "spring-petclinic"
     ```
+    
+    **Note:** The name of the repository in the variable should be the same as the name you have specified in _[urls.txt](https://github.com/Accenture/adop-cartridge-java/blob/master/src/urls.txt)_ file. For example: if the url is https://github.com/Accenture/spring-petclinic.git, then the _referenceAppgitRepo_ variable should be set to _spring_petclinic_.
 
 * The URL of your gerrit project.
 
