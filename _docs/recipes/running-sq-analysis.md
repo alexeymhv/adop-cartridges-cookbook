@@ -115,7 +115,10 @@ codeAnalysisJob.with {
 
 ---
 
-See the complete source code in our _[adop-cardridge-java](https://github.com/Accenture/adop-cartridge-java/blob/master/jenkins/jobs/dsl/java_reference_application_jobs.groovy)_ cartridge repository.
+More details here:
+
+- [Jenkins Job DSL API / configure](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.jobs.WorkflowJob.configure)
+- [adop-cardridge-java](https://github.com/Accenture/adop-cartridge-java/blob/master/jenkins/jobs/dsl/java_reference_application_jobs.groovy)
 
 
 
