@@ -15,6 +15,7 @@ At first you'll need to define several variables:
     ```
     def projectFolderName = "${PROJECT_NAME}"
     ```
+    **Note:** The projectFolderName variable should be always set to ${PROJECT_NAME} and nothing else.
 * The freestyle job.
 
     Put your job name in place of the placeholder \<JOB_NAME\>.
