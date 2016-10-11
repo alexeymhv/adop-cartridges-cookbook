@@ -4,7 +4,7 @@ title: Running Maven
 permalink: /docs/recipes/running-maven/
 ---
 
-Let’s say you want your pipeline to invoke a Maven build.
+This section describes how to invoke a Maven build.
 
 # Method
 
