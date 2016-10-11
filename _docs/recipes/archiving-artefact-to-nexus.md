@@ -50,6 +50,26 @@ The following snippet should go inside Jenkins job definition:
 
 ### Maven
 
-First you need to add Nexus credentials to Maven _settings.xml_ file.
+Frst you need to have a [Config File Provider Plugin](https://wiki.jenkins-ci.org/display/JENKINS/Config+File+Provider+Plugin) installed on Jenkins. 
+
+Once you have it installed, add a new Maven _settings.xml_ configuration file.
+
+In the file you need to specify your Nexus credentials which will be used to upload artifacts.
+
+Add the followin snippet to the _settings.xml_ configuration file:
+
+```
+<servers>
+    ...
+      <server>
+            <id>nexus</id>
+            <username>USERNAME</username>
+            <password>PASSWORD</password>
+      </server>
+    ...
+</servers>
+```
+
+In place of _USERNAME_ and _PASSWORD_ placeholders insert your real nexus credentials.
 
 
