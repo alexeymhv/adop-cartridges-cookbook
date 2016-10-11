@@ -34,8 +34,6 @@ For more details about Maven parameters please refer to the official _[Jenkins J
 
 The snippet should go inside the job definition. 
 
-_Please refer to the documentation - [Creating a Jenkins job](https://mibzzz.github.io/adop-cartridges-cookbook/docs/recipes/creating-a-job/)_
-
 ```
     steps {
         maven {
@@ -44,6 +42,11 @@ _Please refer to the documentation - [Creating a Jenkins job](https://mibzzz.git
         }
     }
 ```
+
+---
+
+More details here:
+- [Creating a Jenkins job](https://mibzzz.github.io/adop-cartridges-cookbook/docs/recipes/creating-a-job/)
 
 
 
