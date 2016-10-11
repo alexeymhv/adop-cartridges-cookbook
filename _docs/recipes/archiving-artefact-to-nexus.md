@@ -72,4 +72,38 @@ Add the followin snippet to the _settings.xml_ configuration file:
 
 In place of _USERNAME_ and _PASSWORD_ placeholders insert your real nexus credentials.
 
+The artefact will be uploaded to Nexus as a part of Maven build lifecycle. Thus, the Nexus properties should be defined in Jenkins Job DSL _steps_ in _maven_ section.
 
+```
+steps {
+        ...
+        maven {
+            goals('clean install -DskipTests')
+            goals('deploy:deploy-file')
+            property('groupId', 'com.spring.maventest')
+            property('artifactId', 'petclinic')
+            property('version', '1.0.0')
+            property('generatePom', 'false')
+            property('packaging', 'war')
+            property('repositoryId', 'nexus')
+            property('url', 'http://nexus:8081/nexus/content/repositories/<YOUR_REPO_NAME>/')
+            property('file', 'target/petclinic.war')
+            mavenInstallation("ADOP Maven")
+            providedSettings('MySettings')
+            
+        }
+        ...
+}
+```
+
+### Parameters
+
+- goals() - Maven goals to execute
+
+- property() - Adds a property for the Maven build
+
+    #### Nexus parameters
+    
+    - groupId - group id
+    
+    - artifactId - artifact id
