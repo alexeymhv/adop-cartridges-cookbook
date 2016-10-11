@@ -2,14 +2,29 @@
   docs:
   - welcome
   
-- title: Recipes
+- title: Creating jobs
   docs:
   - recipes/creating-a-job
+  
+- title: Source code management
+  docs:
   - recipes/git-clone
+  
+- title: Building an app
+  docs:
   - recipes/running-maven
+  
+- title: Tests and code analysis
+  docs:
   - recipes/selenium-tests
   - recipes/running-sq-analysis
+  
+- title: Pipelines
+  docs:
   - recipes/creating-pipeline-view
   - recipes/calling-downstream-job
+  
+- title: Archiving artefacts
+  docs:
   - recipes/archiving-artefact-to-nexus
   - recipes/archiving-artefact-on-job
