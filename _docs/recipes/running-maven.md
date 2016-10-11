@@ -27,8 +27,6 @@ The following parameters should be defined:
 * mavenInstallation(String name)
 
   _Specifies the Maven installation for executing this step_
-  
-For more details about Maven parameters please refer to the official _[Jenkins Job DSL Plugin Documentation](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.step.StepContext.maven)_
 
 # Example
 
@@ -47,6 +45,7 @@ The snippet should go inside the job definition.
 
 More details here:
 
+- _[Jenkins Job DSL Plugin Documentation / maven](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.step.StepContext.maven)_
 - [Creating a Jenkins job](https://mibzzz.github.io/adop-cartridges-cookbook/docs/recipes/creating-a-job/)
 
 
