@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Archiving an artefact on the job
-permalink: /docs/recipes/archiving-artifact-on-job/
+permalink: /docs/recipes/archiving-artefact-on-job/
 ---
 
 Let's say you want to archive an artefact on the job.
