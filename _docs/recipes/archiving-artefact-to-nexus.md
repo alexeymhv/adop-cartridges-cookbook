@@ -108,7 +108,8 @@ steps {
 
 - providedSettings() - Speficies the _settings.xml_ file to use. 
 
-===
+---
+
 
 More details here:
 
