@@ -4,7 +4,7 @@ title: Creating a freestyle Jenkins job
 permalink: /docs/recipes/creating-a-job/
 ---
 
-Let's say you want to create a _freestyle_ Jenkins job.
+This section describes how to create a _freestyle_ Jenkins job.
 
 # Method
 
