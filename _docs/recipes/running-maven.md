@@ -45,7 +45,7 @@ The snippet should go inside the job definition.
 
 More details here:
 
-- _[Jenkins Job DSL Plugin Documentation / maven](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.step.StepContext.maven)_
+- [Jenkins Job DSL Plugin Documentation / maven](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.step.StepContext.maven)
 - [Creating a Jenkins job](https://mibzzz.github.io/adop-cartridges-cookbook/docs/recipes/creating-a-job/)
 
 
