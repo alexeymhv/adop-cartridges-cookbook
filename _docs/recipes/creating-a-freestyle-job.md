@@ -58,5 +58,11 @@ buildAppJob.with {
 }
 ```
 
+---
+
+More details here:
+
+- [Jenkins Job DSL API / freeStyleJob](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.DslFactory.freeStyleJob)
+
 
 
