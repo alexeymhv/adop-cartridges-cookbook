@@ -4,7 +4,7 @@ title: Cloning from Gerrit
 permalink: /docs/recipes/git-clone/
 ---
 
-Let's say you want your pipeline to clone a repository from Gerrit.
+This section describes how to make your pipeline to clone a repository from Gerrit.
 
 # Method
 
