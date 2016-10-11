@@ -55,3 +55,10 @@ For more understanding see the source code:
 - [OwnerTest.java](https://github.com/Accenture/adop-cartridge-java-regression-tests/blob/master/src/test/java/springpetclinic_selenium/selenium/OwnerTest.java) - the selenium test.
 - [Configure.java](https://github.com/Accenture/adop-cartridge-java-regression-tests/blob/master/src/main/java/springpetclinic_selenium/utils/Configure.java) - the class which processes the data set in config.properties file
 - [config.properties](https://github.com/Accenture/adop-cartridge-java-regression-tests/tree/master/src/main/resources) - the configuration file which describes the properties of ZAP and Selenium Grid
+
+---
+
+More details here:
+
+- [Jenkins Job DSL API / maven](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.helpers.step.StepContext.maven)
+- [Jenkins Job DSL API / environmentVariables](https://jenkinsci.github.io/job-dsl-plugin/#method/javaposse.jobdsl.dsl.jobs.FreeStyleJob.environmentVariables)
