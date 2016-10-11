@@ -4,7 +4,7 @@ title: Creating a pipeline view
 permalink: /docs/recipes/creating-pipeline-view/
 ---
 
-Let's say you have all your jobs prepared and you want to build a pipeline.
+This section describes how to to build a pipeline.
 
 # Method
 
