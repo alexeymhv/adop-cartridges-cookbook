@@ -46,6 +46,7 @@ The snippet should go inside the job definition.
 ---
 
 More details here:
+
 - [Creating a Jenkins job](https://mibzzz.github.io/adop-cartridges-cookbook/docs/recipes/creating-a-job/)
 
 
